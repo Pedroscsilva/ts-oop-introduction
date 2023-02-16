@@ -21,7 +21,7 @@ class PVP extends Battle {
 
   fight(): number {
     const result = this.fightToDeath();
-    if (result === 0) { this.fight(); }
+    if (result === 0) { return this.fight(); }
     return result; 
   }
 }
